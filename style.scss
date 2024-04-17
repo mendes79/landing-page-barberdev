@@ -1,0 +1,43 @@
+/* Reset das configurações HTML da página para começar a estilização do zero */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+/* Importa a lista de cores do _colors.scss */
+@import "Partials/colors";
+
+/* Importa as configurações do HEADER de navegação das mídias sociais e botão agendar horário */
+@import "Partials/header";
+
+/* Importa as configurações do layout do container para controlar ações de redimensionamento da tela */
+@import "Partials/layout";
+
+body {
+  font-family: "Sora", sans-serif;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: $primary-normal;
+}
+
+button {
+  font-family: "Sora", sans-serif;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+}
+
+// porcentagem para que as imagens façam adaptação de tamanho ao redimensionar o site
+img {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
